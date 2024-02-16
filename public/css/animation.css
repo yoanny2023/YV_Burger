@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* *****************************Menu-Bar***************************************/
+@keyframes slide-down{
+  from{
+    transform: translateY(-40px);
+  }
+}
+/* ****************************Side-Bar****************************************/
+@keyframes close-rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left{
+  from{
+    transform: translateX(200px);
+  }
+}
+
+@keyframes sub-slide-left{
+  from{
+    transform: translateX(150px);
+  
+  }
+}
+@keyframes sub-slide-right{
+  from{
+    transform: translateX(-100px);
+  
+  }
+}
+
+@keyframes slide-right{
+  to{
+    transform: translateX(300px);
+
+  }
+}
