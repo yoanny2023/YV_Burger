@@ -9,6 +9,7 @@ html{
 }
 :root{
   --BORDER-BOX: #6b123e;
+  --BORDER-BOX-HOVER:#85ED5A;
   --BOX-BG: #fff;
 }
 
@@ -31,27 +32,48 @@ main{
 
 .bev-outter{
   display: flex;
- /*  border: 2px solid blueviolet; */
+/*   border: 2px solid blueviolet; */
   flex-direction: column;
   align-items: center;
-  margin: 10px; 
+  gap: 20px;
+/*   margin: 10px;  */
+}
+#beverage,#burger,#dessert,#appetizer{
+  scroll-margin-top: 3rem;
 }
 
 .bev-inner{
+
   display: flex;
   border: 2px solid var(--BORDER-BOX);
   border-radius: 10px;
   background-color: var(--BOX-BG);
   flex-direction: column;
   align-items: center;
+
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding-inline: 10px;
   max-width: 300px;
-  z-index: 10;
+  position: relative;
 
 }
 
+/* .bev-inner::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height:100%;
+  background-color: blue;
+
+  z-index: -1;
+} 
+
+.bev-inner:hover::before{
+  width: 115%;
+  height:100%;
+}
+ */
 .bev-inner p{
   text-align: left;
 }
@@ -76,7 +98,7 @@ div  h2{
   justify-content: center;
 /*   background-color: salmon; */
   position: relative;
-  z-index: 20;
+/*   z-index: 2; */
 }
 .figure::after{
   position: relative;
@@ -91,7 +113,6 @@ img{
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 0px; 
-
 } 
 
 figcaption{
